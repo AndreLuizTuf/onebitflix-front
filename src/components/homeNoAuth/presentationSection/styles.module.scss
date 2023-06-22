@@ -56,31 +56,28 @@
   }
 }
 @media (max-width: 590px) {
-    .imgPresentation {
-      width: 95%;
-    }
-    .title {
-      font-size: 26px;
-      font-weight: bold;
-      line-height: 34px;
-    }
-    .description {
-      font-size: 14px;
-      color: $lightGray;
-      margin: 20px 0px 40px 0px;
-    }
-    .btnCta {
-      padding: 10px 24px;
-    }
+  .imgPresentation {
+    width: 95%;
   }
-  @media (max-width: 359px) {
-    .subTitle {
-      font-size: 14px;
-    }
-    .title {
-      font-size: 20px;
-    }
-    .description {
-      font-size: 12px;
-    }
+  .title {
+    font-size: 26px;
+    line-height: 34px;
   }
+  .description {
+    font-size: 14px;
+  }
+  .btnCta {
+    padding: 10px 24px;
+  }
+}
+@media (max-width: 359px) {
+  .subTitle {
+    font-size: 14px;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .description {
+    font-size: 12px;
+  }
+}

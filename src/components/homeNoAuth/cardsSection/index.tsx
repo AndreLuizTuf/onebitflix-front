@@ -1,5 +1,5 @@
-import { Container } from "reactstrap";
-import styles from "./styles.module.scss";
+import { Container } from 'reactstrap';
+import styles from './styles.module.scss';
 
 const CardsSection = function () {
   return (

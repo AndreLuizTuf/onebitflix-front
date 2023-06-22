@@ -5,6 +5,8 @@
   font-weight: bold;
 }
 .slideSectionBtn {
+  transition: 0.3s;
+
   &:hover {
     border-color: $lightRed;
     background-color: transparent;

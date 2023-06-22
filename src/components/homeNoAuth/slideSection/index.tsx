@@ -1,8 +1,8 @@
-import { CourseType } from '@/src/services/courseService';
-import styles from './styles.module.scss';
-import { Button, Container } from 'reactstrap';
-import SlideComponent from '../../common/slideComponent';
-import Link from 'next/link';
+import styles from "./styles.module.scss";
+import { Button, Container } from "reactstrap";
+import { CourseType } from "../../../services/courseService";
+import SlideComponent from "../../common/slideComponent";
+import Link from "next/link";
 
 interface props {
   newestCourses: CourseType[];

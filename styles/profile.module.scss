@@ -114,10 +114,18 @@
   padding: 14px 0px;
   &:hover {
     background-color: transparent;
-    border-color: $lightRed;
-    color: $lightGray;
+    color: $lightRed;
+  }
+  &:active {
+    background-color: transparent;
+    box-shadow: none;
+  }
+  &:focus {
+    background-color: transparent;
+    box-shadow: none;
   }
 }
+
 .header {
   background-color: black;
 }

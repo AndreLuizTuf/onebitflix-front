@@ -1,22 +1,22 @@
-import Head from 'next/head';
-import HeaderNoAuth from '../src/components/homeNoAuth/headerNoAuth';
-import styles from '../styles/homeNoAuth.module.scss';
-import PresentationSection from '@/src/components/homeNoAuth/presentationSection';
-import CardsSection from '@/src/components/homeNoAuth/cardsSection';
-import SlideSection from '@/src/components/homeNoAuth/slideSection';
 import { GetStaticProps } from 'next';
-import courseService, { CourseType } from '@/src/services/courseService';
+import Head from 'next/head';
 import { ReactNode, useEffect } from 'react';
-import Footer from '@/src/components/common/footer';
+import Footer from '../src/components/common/footer';
+import CardsSection from '../src/components/homeNoAuth/cardsSection';
+import HeaderNoAuth from '../src/components/homeNoAuth/headerNoAuth';
+import PresentationSection from '../src/components/homeNoAuth/presentationSection';
+import SlideSection from '../src/components/homeNoAuth/slideSection';
+import courseService, { CourseType } from '../src/services/courseService';
+import styles from '../styles/HomeNoAuth.module.scss';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 interface IndexPageProps {
-  children?: ReactNode;
+  chrildren?: ReactNode;
   course: CourseType[];
 }
 
-const HomeNotAuth = function ({ course }: IndexPageProps) {
+const HomeNoAuth = ({ course }: IndexPageProps) => {
   useEffect(() => {
     AOS.init();
   }, []);
@@ -29,7 +29,8 @@ const HomeNotAuth = function ({ course }: IndexPageProps) {
         <meta property="og:title" content="Onebitflix" key="title" />
         <meta
           name="description"
-          content="Tenha acesso aos melhores conteúdos sobre programação de uma forma simples e fácil."></meta>
+          content="Tenha acesso aos melhors conteúdos de programação de uma forma simples e fácil!"
+        />
       </Head>
       <main>
         <div
@@ -61,4 +62,4 @@ export const getStaticProps: GetStaticProps = async () => {
   };
 };
 
-export default HomeNotAuth;
+export default HomeNoAuth;

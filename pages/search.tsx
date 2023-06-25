@@ -10,15 +10,12 @@ import Footer from '@/src/components/common/footer';
 
 const Search = function () {
   const router = useRouter();
-  const searchName = router.query.name;
+  const searchName: any = router.query.name;
   const [searchResult, setSearchResult] = useState<CourseType[]>([]);
 
   const searchCourses = async function () {
-    if (searchName === 'string') {
-      const res = await courseService.getSearch(searchName);
-
-      setSearchResult(res.data.courses);
-    }
+    const res = await courseService.getSearch(searchName);
+    setSearchResult(res.data.courses);
   };
 
   useEffect(() => {
@@ -31,18 +28,22 @@ const Search = function () {
         <title>Onebitflix - {searchName}</title>
         <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon" />
       </Head>
-      <main>
+      <main className={styles.main}>
         <div className={styles.header}>
           <HeaderAuth />
         </div>
         {searchResult.length >= 1 ? (
-          <Container className="d-flex flex-wrap justify-content-center gap-5 py-4">
-            {searchResult?.map((course) => (
-              <SearchCard key={course.id} course={course} />
-            ))}
-          </Container>
+          <div className={styles.searchContainer}>
+            <Container className="d-flex flex-wrap justify-content-center gap-5 py-4">
+              {searchResult?.map((course) => (
+                <SearchCard key={course.id} course={course} />
+              ))}
+            </Container>
+          </div>
         ) : (
-          <p className={styles.noSearchText}>Nenhum resultado encontrado!</p>
+          <div className={styles.searchContainer}>
+            <p className={styles.noSearchResult}>Nenhum resultado encontrado</p>
+          </div>
         )}
         <div className={styles.footer}>
           <Footer />

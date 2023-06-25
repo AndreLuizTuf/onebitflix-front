@@ -37,7 +37,7 @@ const CoursePage = function () {
       await courseService.removeLike(id);
       setLiked(false);
     } else {
-      await courseService.like(id);
+      await courseService.like(id)
       setLiked(true);
     }
   };

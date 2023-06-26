@@ -1,4 +1,4 @@
-import { CourseType } from '@/src/services/courseService';
+import { CourseType } from '../../../../src/services/courseService';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
 import SlideCard from '../slideCard';

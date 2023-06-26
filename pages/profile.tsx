@@ -1,13 +1,13 @@
 import Head from 'next/head';
 import styles from '../styles/profile.module.scss';
-import UserForm from '@/src/components/profile/user';
-import HeaderAuth from '@/src/components/common/headerAuth';
+import UserForm from '../src/components/profile/user';
+import HeaderAuth from '../src/components/common/headerAuth';
 import { Button, Col, Container, Row } from 'reactstrap';
-import Footer from '@/src/components/common/footer';
+import Footer from '../src/components/common/footer';
 import { useEffect, useState } from 'react';
-import PasswordForm from '@/src/components/profile/password';
+import PasswordForm from '../src/components/profile/password';
 import { useRouter } from 'next/router';
-import PageSpinner from '@/src/components/common/spinner';
+import PageSpinner from '../src/components/common/spinner';
 
 const UserInfo = function () {
   const [form, setForm] = useState('userForm');

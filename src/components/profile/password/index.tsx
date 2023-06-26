@@ -1,7 +1,7 @@
 import { Button, Form, FormGroup, Input, Label } from 'reactstrap';
 import styles from '../../../../styles/profile.module.scss';
 import { FormEvent, useEffect, useState } from 'react';
-import profileService from '@/src/services/profileService';
+import profileService from '../../../../src/services/profileService';
 import ToastComponent from '../../common/toast';
 
 const PasswordForm = function () {

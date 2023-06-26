@@ -1,4 +1,4 @@
-import courseService from '@/src/services/courseService';
+import courseService from '../../../services/courseService';
 import useSWR from 'swr';
 import SlideComponent from '../../common/slideComponent';
 import styles from '../../../../styles/slideCategory.module.scss';

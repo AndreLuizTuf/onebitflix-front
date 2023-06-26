@@ -1,12 +1,12 @@
-import HeaderGeneric from '@/src/components/common/headerGeneric';
+import HeaderGeneric from '../src/components/common/headerGeneric';
 import styles from '../styles/registerLogin.module.scss';
 import Head from 'next/head';
 import { Button, Container, Form, FormGroup, Input, Label } from 'reactstrap';
-import Footer from '@/src/components/common/footer';
+import Footer from '../src/components/common/footer';
 import { FormEvent, useEffect, useState } from 'react';
-import authService from '@/src/services/authService';
+import authService from '../src/services/authService';
 import { useRouter } from 'next/router';
-import ToastComponent from '@/src/components/common/toast';
+import ToastComponent from '../src/components/common/toast';
 
 const Register = function () {
   const router = useRouter();

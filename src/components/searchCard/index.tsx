@@ -1,4 +1,4 @@
-import { CourseType } from '@/src/services/courseService';
+import { CourseType } from '../../../src/services/courseService';
 import styles from './styles.module.scss';
 import Link from 'next/link';
 

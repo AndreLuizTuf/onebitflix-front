@@ -3,11 +3,11 @@ import Head from 'next/head';
 import HeaderAuth from '../src/components/common/headerAuth';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
-import courseService, { CourseType } from '@/src/services/courseService';
+import courseService, { CourseType } from '../src/services/courseService';
 import { Container } from 'reactstrap';
-import SearchCard from '@/src/components/searchCard';
-import Footer from '@/src/components/common/footer';
-import PageSpinner from '@/src/components/common/spinner';
+import SearchCard from '../src/components/searchCard';
+import Footer from '../src/components/common/footer';
+import PageSpinner from '../src/components/common/spinner';
 
 const Search = function () {
   const router = useRouter();
@@ -25,14 +25,13 @@ const Search = function () {
   }, [searchName]);
 
   useEffect(() => {
-    if (!sessionStorage.getItem("onebitflix-token")) {
-      router.push("/login");
+    if (!sessionStorage.getItem('onebitflix-token')) {
+      router.push('/login');
     } else {
       setLoading(false);
     }
   }, []);
 
-  
   if (loading) {
     return <PageSpinner />;
   }

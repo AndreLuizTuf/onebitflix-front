@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Modal from 'react-modal';
 import { FormEvent, useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
-import profileService from '@/src/services/profileService';
+import profileService from '../../../../src/services/profileService';
 
 Modal.setAppElement('#__next');
 

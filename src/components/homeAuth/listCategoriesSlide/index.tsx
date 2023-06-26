@@ -1,4 +1,4 @@
-import categoriesService from '@/src/services/categoriesService';
+import categoriesService from '../../../../src/services/categoriesService';
 import styles from '../../../../styles/slideCategory.module.scss';
 import useSWR from 'swr';
 import SlideComponent from '../../common/slideComponent';

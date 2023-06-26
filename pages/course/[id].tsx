@@ -1,13 +1,13 @@
-import HeaderAuth from '@/src/components/common/headerAuth';
+import HeaderAuth from '../../src/components/common/headerAuth';
 import styles from '../../styles/coursePage.module.scss';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
-import courseService, { CourseType } from '@/src/services/courseService';
+import courseService, { CourseType } from '../../src/services/courseService';
 import { Button, Container } from 'reactstrap';
-import PageSpinner from '@/src/components/common/spinner';
-import EpisodeList from '@/src/components/episodesList';
-import Footer from '@/src/components/common/footer';
+import PageSpinner from '../../src/components/common/spinner';
+import EpisodeList from '../../src/components/episodesList';
+import Footer from '../../src/components/common/footer';
 
 const CoursePage = function () {
   const [liked, setLiked] = useState(false);

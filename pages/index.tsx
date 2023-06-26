@@ -58,7 +58,6 @@ export const getStaticProps: GetStaticProps = async () => {
     props: {
       course: res.data,
     },
-    revalidate: 3600 * 24,
   };
 };
 

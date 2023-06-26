@@ -1,7 +1,7 @@
 import styles from "../../../styles/episodePlayer.module.scss";
 import Head from "next/head";
 
-import HeaderGeneric from "@/src/components/common/headerGeneric";
+import HeaderGeneric from "../../../src/components/common/headerGeneric";
 
 import { useRouter } from "next/router";
 import { useEffect, useRef, useState } from "react";
@@ -10,7 +10,7 @@ import courseService, { CourseType } from "../../../src/services/courseService";
 import PageSpinner from "../../../src/components/common/spinner";
 import { Button, Container } from "reactstrap";
 import ReactPlayer from "react-player";
-import watchEpisodeService from "@/src/services/episodesService";
+import watchEpisodeService from "../../../src/services/episodesService";
 
 const EpisodePlayer = function () {
   const router = useRouter();

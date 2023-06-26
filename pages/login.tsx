@@ -2,11 +2,11 @@ import Head from 'next/head';
 import HeaderGeneric from '../src/components/common/headerGeneric';
 import styles from '../styles/registerLogin.module.scss';
 import { Button, Container, Form, FormGroup, Input, Label } from 'reactstrap';
-import Footer from '@/src/components/common/footer';
+import Footer from '../src/components/common/footer';
 import { useRouter } from 'next/router';
 import { FormEvent, useEffect, useState } from 'react';
-import ToastComponent from '@/src/components/common/toast';
-import authService from '@/src/services/authService';
+import ToastComponent from '../src/components/common/toast';
+import authService from '../src/services/authService';
 
 const Login = function () {
   const router = useRouter();

@@ -1,6 +1,6 @@
 import categoriesService, {
   CategoryType,
-} from '@/src/services/categoriesService';
+} from '../../../../src/services/categoriesService';
 import useSWR from 'swr';
 import ListCategoriesSlide from '../listCategoriesSlide';
 import PageSpinner from '../../common/spinner';
